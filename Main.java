@@ -1,7 +1,7 @@
 package nyc.c4q.madelyntav;
 
 
-import java.util.Scanner;
+import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
@@ -23,6 +23,7 @@ public class Main {
         while (again) {
 //            n = input.nextInt();
 //            System.out.println("You chose " + n + ". ");
+//        continue;
 
             while (predict) {
                 n = input.nextInt();
@@ -79,21 +80,33 @@ public class Main {
                         System.out.println("You will have your own business");
 //                    System.out.println("Would you like to choose another future? (Y or N?");
 //                    next = input.nextInt();
-                        break;
+                    }
 
-                    } else {
+                    else{
                         System.out.println("You must choose a number from 1-10.Choose a number");
                         n = input.nextInt();
-                        break;
-
-                    }}
-
-                        System.out.println("Would you like me to predict another future for you? Choose a number.");
-                        next = input.nextInt();
-                        continue;
-
                     }
+
+
                 }
+                Scanner run = new Scanner(System.in);
+                System.out.println("Would you like me to predict another future for you? Choose a number.");
+
+
+
+//                n = input.nextInt();
+//                if (int i=0){
+//                    again=true;
+                }
+
+            
+
+
+            }
+
+
+                }
+
             }
 
 
@@ -106,8 +119,6 @@ public class Main {
 //                System.out.print("Good luck!");
 //                break;
 //
-
-        }
 
 
 
