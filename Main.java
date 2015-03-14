@@ -29,7 +29,7 @@ public class Main {
                 n = input.nextInt();
                 System.out.println("You chose " + n + ". ");
 
-                while (n < 10) {
+                while (n < 11) {
 
                     if (n == 1) {
                         System.out.println("You will have many children to take care of. You will live a long life ");
@@ -80,18 +80,20 @@ public class Main {
                         System.out.println("You will have your own business");
 //                    System.out.println("Would you like to choose another future? (Y or N?");
 //                    next = input.nextInt();
-                    }
-
-                    else{
-                        System.out.println("You must choose a number from 1-10.Choose a number");
-                        n = input.nextInt();
-                    }
+                        break;}
+//                    } else {
+//                        System.out.println("You must choose a number from 1-10.Choose a number");
+////                        n = input.nextInt();
+//                    }
 
 
                 }
                 Scanner run = new Scanner(System.in);
-                System.out.println("Would you like me to predict another future for you? Choose a number.");
-
+                if (n < 11) {
+                    System.out.println("Would you like me to predict another future for you? Choose a number from 1-10.");
+                } else{
+                    System.out.println("I cannot change your future, you are doomed if you are unable to follow rules. Goodbye. Enjoy your fortune!");
+            }
 
 
 //                n = input.nextInt();
@@ -99,7 +101,7 @@ public class Main {
 //                    again=true;
                 }
 
-            
+
 
 
             }
